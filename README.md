@@ -62,7 +62,8 @@ python3 ant_control.py
 ```
 - Loads ant.xml and applies random control inputs for 10 seconds.
 - Displays the simulation using mujoco.viewer.
-[1.webm](https://github.com/user-attachments/assets/e1a3cce4-4862-46e0-9dec-77bea4b0c735)
+
+[1.webm](https://github.com/user-attachments/assets/d71dcc1a-b974-4e28-aa7a-0dbe4d0d38ae)
 
 ## Task 2: Multiple Ant Environments
 
@@ -87,7 +88,7 @@ python3 multiple_ant_control.py
 
 
 ### Half_Cheetah
-[2.2.webm](https://github.com/user-attachments/assets/d3cf47ac-9f13-42aa-a954-c8eae29577cf)
+[2.2.webm](https://github.com/user-attachments/assets/33648050-bde9-4030-ab63-7d1a8f31326e)
 
 </br > 
 
@@ -121,7 +122,8 @@ python3 ppo.py
 
 
 ###  7.5×10^7 steps
-![training_progress2](https://github.com/user-attachments/assets/f3a5f270-bc57-4f53-a484-d5bda4dea243)
+![training_progress2](https://github.com/user-attachments/assets/f3a5f270-bc57-4f53-a48[Uploading 2.2.webm…]()
+4-d5bda4dea243)
 
 - trained on RTX 3050 GPU and took 10mins 30 sec to complete.
 
@@ -141,11 +143,13 @@ Test the trained PPO policy in MuJoCo:
 ```bash
 python3 visualize.py
 ```
-[4.webm](https://github.com/user-attachments/assets/785d5814-d6f6-4ae8-bf41-d43eeccebc7a)
 
 
 - Saves and loads the trained policy from ant_ppo_policy.
 - Applies it to the Ant in ant.xml and visualizes the rollout.
+
+
+[4.webm](https://github.com/user-attachments/assets/8d062ba3-bbab-430f-b6e0-2064ec864f8f)
 
 
 (Note that third script only saves the reward of the training while fourth script trains the model, saves and load it and then use that for evaluation.)
