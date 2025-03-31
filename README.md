@@ -41,8 +41,7 @@ python3 ant_control.py
 - Loads ant.xml and applies random control inputs for 10 seconds.
 - Displays the simulation using mujoco.viewer.
 
-[Screencast from 2025-03-31 15-54-56.webm](https://github.com/user-attachments/assets/5cd0d0a8-48ef-4299-9b13-72fd9b47a227)
-
+https://github.com/ChinmayMundane/Ant_Simulation_Brax/blob/9941fba3d69cbe6557b817179d9efc258bf6c9c3/asset/1.webm
 
 ## Task 2: Multiple Ant Environments
 
