@@ -10,18 +10,40 @@ This repo demonstrates the use of MuJoCo and Brax for simulating and controlling
 - **Task 4(Policy Visualization)**: Load the trained PPO policy and test it in a MuJoCo simulation.
 
 ## Prerequisites 
+- Virtual environment
+```bash
+python3 -m venv mjenv
+source mjenv/bin/activate
 
+```
+
+After you enter virtual env, install these libraries
+- Jax (follow this [reference](https://docs.jax.dev/en/latest/quickstart.html) or if you have cuda 12 then just do the following)
+```bash
+pip install -U "jax[cuda12]"
+```
+
+- Other dependencies
+```bash
+pip install mujoco brax numpy ipython matplotlib
+```
+Now just clone the repo and cd under it
+
+```bash
+git clone https://github.com/ChinmayMundane/Ant_Simulation_Brax.git
+cd Ant_Simulation_Brax
+```
 
 ## File Structure
 ```
 Ant_Simulation_Brax/
-├── ant_control.py
+├── ant_control.py                     # task1
 │  
-├── multiple_ant_control.py 
+├── multiple_ant_control.py            # task2         
 │      
-├── ppo.py
+├── ppo.py                            # task3
 │      
-├── visualize.py
+├── visualize.py                     # task4
 │   
 ├── ant.xml
 ├── humanoid.xml
@@ -40,10 +62,10 @@ python3 ant_control.py
 ```
 - Loads ant.xml and applies random control inputs for 10 seconds.
 - Displays the simulation using mujoco.viewer.
-
-https://github.com/ChinmayMundane/Ant_Simulation_Brax/blob/9941fba3d69cbe6557b817179d9efc258bf6c9c3/asset/1.webm
+[1.webm](https://github.com/user-attachments/assets/e1a3cce4-4862-46e0-9dec-77bea4b0c735)
 
 ## Task 2: Multiple Ant Environments
+
 
 Replicate and simulate multiple Ant robots:
 
