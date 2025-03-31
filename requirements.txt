@@ -1,0 +1,8 @@
+jax
+jaxlib
+mujoco
+numpy
+matplotlib
+brax
+ipython
+
