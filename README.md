@@ -74,7 +74,7 @@ python3 multiple_ant_control.py
 
 ```
 - Uses ant.xml by default (update to half_cheetah.xml or humanoid.xml if needed).
-- Replicates 6 environments in a 2x3 grid with a separation of 3 units.
+- Replicates 6 models in a 2x3 grid with a separation of 3 units.
 - Applies random controls to all robots.
 
 </br > 
@@ -106,25 +106,31 @@ python3 ppo.py
 
 ```
 - Trains the policy for 75M timesteps using Brax's Ant environment.
-- Saves a plot of the training progress as training_progress.png.
+- Saves a plot of the training progress as training_progress.png to show the rewards.
 </br > 
 
 ###  2.5×10^7 steps
 ![training_progress](https://github.com/user-attachments/assets/3cc53acc-5e6f-4bf0-a637-df843ae362fd)
 
+- trained on RTX 3050 GPU and took 4mins 18 sec to complete.
+
 ###  5×10^7 steps (given by brax implementation)
 ![training_progress1](https://github.com/user-attachments/assets/ecf32a71-9789-4187-9a16-24d061d3ccc7)
+
+- trained on RTX 3050 GPU and took 7mins to complete.
 
 
 ###  7.5×10^7 steps
 ![training_progress2](https://github.com/user-attachments/assets/f3a5f270-bc57-4f53-a484-d5bda4dea243)
 
+- trained on RTX 3050 GPU and took 10mins 30 sec to complete.
+
 
 Based on these, 75M timesteps appears to be the best for the task of training a control policy using Brax' PPO implementation because:
 
 - It achieves the highest maximum reward (approximately 5900)
-- It demonstrates better long-term stability after convergence
-- It shows faster initial learning (steeper slope in the early phase)
+
+- & It shows faster initial learning (steeper slope in the early phase)
 
 Even after some performance decline, it maintains a higher final reward than either of the other runs.
 
@@ -140,3 +146,6 @@ python3 visualize.py
 
 - Saves and loads the trained policy from ant_ppo_policy.
 - Applies it to the Ant in ant.xml and visualizes the rollout.
+
+
+(Note that third script only saves the reward of the training while fourth script trains the model, saves and load it and then use that for evaluation.)
