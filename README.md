@@ -122,8 +122,7 @@ python3 ppo.py
 
 
 ###  7.5×10^7 steps
-![training_progress2](https://github.com/user-attachments/assets/f3a5f270-bc57-4f53-a48[Uploading 2.2.webm…]()
-4-d5bda4dea243)
+![training_progress2](https://github.com/user-attachments/assets/f3a5f270-bc57-4f53-a484-d5bda4dea243)
 
 - trained on RTX 3050 GPU and took 10mins 30 sec to complete.
 
