@@ -77,6 +77,7 @@ python3 multiple_ant_control.py
 - Uses ant.xml by default (update to half_cheetah.xml or humanoid.xml if needed).
 - Replicates 6 models in a 2x3 grid with a separation of 3 units.
 - Applies random controls to all robots.
+- Note: You can only simulate models which doesn't have global co-ordinates like ant, humanoid and half_cheetah.
 
 </br > 
 
