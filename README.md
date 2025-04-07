@@ -153,3 +153,9 @@ python3 visualize.py
 
 
 (Note that third script only saves the reward of the training while fourth script trains the model, saves and load it and then use that for evaluation.)
+
+
+Youtube demonstration is available here.
+- Task1 : https://www.youtube.com/watch?v=Y36Vi_03POo&authuser=0
+- Task2 : https://www.youtube.com/watch?v=XTZE3wCcno8&authuser=0
+- Task3 : https://www.youtube.com/watch?v=XNvRIW9-fDo&authuser=0
